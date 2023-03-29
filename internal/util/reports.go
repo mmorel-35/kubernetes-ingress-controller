@@ -110,10 +110,10 @@ func (r *Reporter) send(ctx context.Context, signal string, uptime int) {
 			r.Logger.V(DebugLevel).Info("failed to run mesh detection", "error", err)
 			// append results from mesh detection to reported message if returned any.
 		} else if meshMessage != "" {
-				if !strings.HasSuffix(message, ";") {
-					message += ";"
-				}
-				message += meshMessage
+			if !strings.HasSuffix(message, ";") {
+				message += ";"
+			}
+			message += meshMessage
 		}
 	}
 

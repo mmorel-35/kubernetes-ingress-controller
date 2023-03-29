@@ -70,7 +70,7 @@ func TestUDPRouteEssentials(t *testing.T) {
 	require.NoError(t, err)
 
 	t.Log("configuring alternative coredns corefile for load-balanced setup")
-	alternativeCorefile := strings.Replace(corefile, "10.0.0.1 konghq.com", "10.0.0.2 konghq.com", -1)
+	alternativeCorefile := strings.ReplaceAll(corefile, "10.0.0.1 konghq.com", "10.0.0.2 konghq.com")
 	cfgmap2 := &corev1.ConfigMap{ObjectMeta: metav1.ObjectMeta{Name: "coredns2"}, Data: map[string]string{"Corefile": alternativeCorefile}}
 	cfgmap2, err = env.Cluster().Client().CoreV1().ConfigMaps(ns.Name).Create(ctx, cfgmap2, metav1.CreateOptions{})
 	require.NoError(t, err)

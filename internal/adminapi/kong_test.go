@@ -287,7 +287,7 @@ func validate(t *testing.T,
 		return err
 	}
 
-	body := strings.TrimSpace(string(data[:]))
+	body := strings.TrimSpace(string(data))
 	if body != successMessage {
 		return fmt.Errorf("invalid server response: %s", body)
 	}

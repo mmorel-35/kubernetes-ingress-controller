@@ -162,7 +162,7 @@ func httpRouteAcceptedConditionMatches(t *testing.T, c *gatewayclient.Clientset,
 	httpRoute, err = c.GatewayV1beta1().HTTPRoutes(httpRoute.Namespace).Get(context.Background(), httpRoute.Name, metav1.GetOptions{})
 	require.NoError(t, err)
 
-	if len(httpRoute.Status.Parents) <= 0 {
+	if len(httpRoute.Status.Parents) == 0 {
 		return false
 	}
 
