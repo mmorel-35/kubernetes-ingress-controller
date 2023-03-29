@@ -130,7 +130,7 @@ func kongPluginFromK8SClusterPlugin(
 		var err error
 		config, err = namespacedSecretToConfiguration(
 			s,
-			(*k8sPlugin.ConfigFrom).SecretValue)
+			k8sPlugin.ConfigFrom.SecretValue)
 		if err != nil {
 			return kong.Plugin{},
 				fmt.Errorf("error parsing config for KongClusterPlugin %v: %w",
@@ -183,7 +183,7 @@ func kongPluginFromK8SPlugin(
 	if k8sPlugin.ConfigFrom != nil {
 		var err error
 		config, err = SecretToConfiguration(s,
-			(*k8sPlugin.ConfigFrom).SecretValue, k8sPlugin.Namespace)
+			k8sPlugin.ConfigFrom.SecretValue, k8sPlugin.Namespace)
 		if err != nil {
 			return kong.Plugin{},
 				fmt.Errorf("error parsing config for KongPlugin '%v/%v': %w",
@@ -267,7 +267,7 @@ func PrettyPrintServiceList(services map[string]*corev1.Service) string {
 	first := true
 	for _, svc := range services {
 		if !first {
-			serviceList = serviceList + ", "
+			serviceList += ", "
 		}
 		serviceList = serviceList + svc.Namespace + "/" + svc.Name
 		if first {
