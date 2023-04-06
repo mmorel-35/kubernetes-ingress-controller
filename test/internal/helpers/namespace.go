@@ -4,11 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
-	"github.com/kong/kubernetes-testing-framework/pkg/environments"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"
+
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
+	"github.com/kong/kubernetes-testing-framework/pkg/environments"
 )
 
 // Namespace provides the Namespace provisioned for each test case given their t.Name as the "testCase".

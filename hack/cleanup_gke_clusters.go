@@ -19,10 +19,10 @@ import (
 
 	container "cloud.google.com/go/container/apiv1"
 	"cloud.google.com/go/container/apiv1/containerpb"
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters/types/gke"
 	"google.golang.org/api/option"
 
 	"github.com/kong/kubernetes-ingress-controller/v2/test/e2e"
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters/types/gke"
 )
 
 const timeUntilClusterOrphaned = time.Hour

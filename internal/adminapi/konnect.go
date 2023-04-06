@@ -10,9 +10,9 @@ import (
 
 	"github.com/avast/retry-go/v4"
 	"github.com/go-logr/logr"
-	"github.com/kong/go-kong/kong"
 	"github.com/samber/lo"
 
+	"github.com/kong/go-kong/kong"
 	tlsutil "github.com/kong/kubernetes-ingress-controller/v2/internal/util/tls"
 )
 

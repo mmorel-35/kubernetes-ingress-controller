@@ -6,9 +6,10 @@ import (
 	"fmt"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/sirupsen/logrus"
+
 	"github.com/kong/deck/file"
 	"github.com/kong/go-kong/kong"
-	"github.com/sirupsen/logrus"
 )
 
 const (

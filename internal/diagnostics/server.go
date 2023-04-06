@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
-	"github.com/kong/deck/file"
 
+	"github.com/kong/deck/file"
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/util"
 )
 

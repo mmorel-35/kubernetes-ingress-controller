@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/kong/go-kong/kong"
 	"github.com/samber/lo"
 	"k8s.io/apimachinery/pkg/types"
 
+	"github.com/kong/go-kong/kong"
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/util"
 )
 

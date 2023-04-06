@@ -3,8 +3,9 @@ package kongstate
 import (
 	"fmt"
 
-	"github.com/kong/go-kong/kong"
 	"github.com/mitchellh/mapstructure"
+
+	"github.com/kong/go-kong/kong"
 )
 
 var redactedString = kong.String("REDACTED")

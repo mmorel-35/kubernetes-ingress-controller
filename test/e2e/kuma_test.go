@@ -7,10 +7,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/kuma"
 	"github.com/stretchr/testify/require"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/util/retry"
+
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/kuma"
 )
 
 func TestDeployAllInOneDBLESSKuma(t *testing.T) {

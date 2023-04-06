@@ -19,8 +19,6 @@ import (
 	"time"
 
 	"github.com/blang/semver/v4"
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters/types/gke"
-	"github.com/kong/kubernetes-testing-framework/pkg/environments"
 	"github.com/phayes/freeport"
 	"github.com/sethvargo/go-password/password"
 	"github.com/stretchr/testify/assert"
@@ -30,6 +28,9 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"sigs.k8s.io/yaml"
+
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters/types/gke"
+	"github.com/kong/kubernetes-testing-framework/pkg/environments"
 )
 
 const (

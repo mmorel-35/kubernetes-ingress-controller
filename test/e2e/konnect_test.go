@@ -19,7 +19,6 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	environment "github.com/kong/kubernetes-testing-framework/pkg/environments"
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -31,6 +30,7 @@ import (
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/konnect"
 	rg "github.com/kong/kubernetes-ingress-controller/v2/internal/konnect/runtimegroups"
 	rgc "github.com/kong/kubernetes-ingress-controller/v2/internal/konnect/runtimegroupsconfig"
+	environment "github.com/kong/kubernetes-testing-framework/pkg/environments"
 )
 
 const (

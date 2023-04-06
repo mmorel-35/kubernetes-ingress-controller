@@ -22,12 +22,13 @@ import (
 	"context"
 	"time"
 
-	v1alpha1 "github.com/kong/kubernetes-ingress-controller/v2/pkg/apis/configuration/v1alpha1"
-	scheme "github.com/kong/kubernetes-ingress-controller/v2/pkg/clientset/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
+
+	v1alpha1 "github.com/kong/kubernetes-ingress-controller/v2/pkg/apis/configuration/v1alpha1"
+	scheme "github.com/kong/kubernetes-ingress-controller/v2/pkg/clientset/scheme"
 )
 
 // IngressClassParametersesGetter has a method to return a IngressClassParametersInterface.

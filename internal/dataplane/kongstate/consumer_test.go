@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/blang/semver/v4"
-	"github.com/kong/go-kong/kong"
 	"github.com/stretchr/testify/assert"
 
+	"github.com/kong/go-kong/kong"
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/versions"
 	configurationv1 "github.com/kong/kubernetes-ingress-controller/v2/pkg/apis/configuration/v1"
 )

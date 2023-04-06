@@ -2,7 +2,6 @@ package admission
 
 import (
 	"github.com/kong/go-kong/kong"
-
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/adminapi"
 )
 

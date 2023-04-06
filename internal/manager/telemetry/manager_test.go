@@ -9,10 +9,6 @@ import (
 
 	"github.com/go-logr/logr"
 	"github.com/google/uuid"
-	"github.com/kong/kubernetes-telemetry/pkg/forwarders"
-	"github.com/kong/kubernetes-telemetry/pkg/serializers"
-	"github.com/kong/kubernetes-telemetry/pkg/telemetry"
-	"github.com/kong/kubernetes-telemetry/pkg/types"
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -25,6 +21,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
+
+	"github.com/kong/kubernetes-telemetry/pkg/forwarders"
+	"github.com/kong/kubernetes-telemetry/pkg/serializers"
+	"github.com/kong/kubernetes-telemetry/pkg/telemetry"
+	"github.com/kong/kubernetes-telemetry/pkg/types"
 )
 
 type mockGatewaysCounter int

@@ -19,9 +19,10 @@ limitations under the License.
 package fake
 
 import (
-	v1alpha1 "github.com/kong/kubernetes-ingress-controller/v2/pkg/clientset/typed/configuration/v1alpha1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
+
+	v1alpha1 "github.com/kong/kubernetes-ingress-controller/v2/pkg/clientset/typed/configuration/v1alpha1"
 )
 
 type FakeConfigurationV1alpha1 struct {

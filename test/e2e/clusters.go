@@ -4,8 +4,9 @@ import (
 	"testing"
 
 	"cloud.google.com/go/container/apiv1/containerpb"
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 	"github.com/stretchr/testify/require"
+
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 )
 
 const (

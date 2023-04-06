@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/kong/kubernetes-ingress-controller/v2/test/internal/testenv"
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 )
 
 // TeardownCluster dumps the diagnostics from the test cluster if the test failed

@@ -4,10 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/kong"
-
 	"github.com/kong/kubernetes-ingress-controller/v2/test/consts"
 	"github.com/kong/kubernetes-ingress-controller/v2/test/internal/testenv"
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/kong"
 )
 
 // GenerateKongBuilder returns a Kong KTF addon builder, a string slice

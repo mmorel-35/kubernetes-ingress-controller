@@ -6,11 +6,6 @@ import (
 	"time"
 
 	"github.com/bombsimon/logrusr/v2"
-	"github.com/kong/kubernetes-telemetry/pkg/forwarders"
-	"github.com/kong/kubernetes-telemetry/pkg/provider"
-	"github.com/kong/kubernetes-telemetry/pkg/serializers"
-	"github.com/kong/kubernetes-telemetry/pkg/telemetry"
-	"github.com/kong/kubernetes-telemetry/pkg/types"
 	"github.com/sirupsen/logrus"
 	apitypes "k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/dynamic"
@@ -20,6 +15,11 @@ import (
 
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/manager/telemetry/workflows"
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/util"
+	"github.com/kong/kubernetes-telemetry/pkg/forwarders"
+	"github.com/kong/kubernetes-telemetry/pkg/provider"
+	"github.com/kong/kubernetes-telemetry/pkg/serializers"
+	"github.com/kong/kubernetes-telemetry/pkg/telemetry"
+	"github.com/kong/kubernetes-telemetry/pkg/types"
 )
 
 const (

@@ -7,7 +7,6 @@ import (
 	"context"
 	"testing"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters/types/kind"
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -19,6 +18,7 @@ import (
 	"github.com/kong/kubernetes-ingress-controller/v2/pkg/clientset"
 	"github.com/kong/kubernetes-ingress-controller/v2/pkg/clientset/scheme"
 	"github.com/kong/kubernetes-ingress-controller/v2/test/internal/helpers"
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters/types/kind"
 )
 
 func TestKongIngressValidationWebhook(t *testing.T) {

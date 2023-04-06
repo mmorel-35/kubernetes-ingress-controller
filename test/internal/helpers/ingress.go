@@ -3,10 +3,11 @@ package helpers
 import (
 	"fmt"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 	netv1 "k8s.io/api/networking/v1"
 	netv1beta1 "k8s.io/api/networking/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime"
+
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 )
 
 // AddIngressToCleaner adds a runtime.Object to the cleanup list if it is a supported version of Ingress. It panics if the

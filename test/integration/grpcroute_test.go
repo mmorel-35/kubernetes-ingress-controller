@@ -10,9 +10,6 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/kong/go-kong/kong"
-	ktfkong "github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/kong"
-	"github.com/kong/kubernetes-testing-framework/pkg/utils/kubernetes/generators"
 	pb "github.com/moul/pb/grpcbin/go-grpc"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
@@ -24,7 +21,10 @@ import (
 	gatewayv1beta1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 	gatewayclient "sigs.k8s.io/gateway-api/pkg/client/clientset/versioned"
 
+	"github.com/kong/go-kong/kong"
 	"github.com/kong/kubernetes-ingress-controller/v2/test/internal/helpers"
+	ktfkong "github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/kong"
+	"github.com/kong/kubernetes-testing-framework/pkg/utils/kubernetes/generators"
 )
 
 func grpcbinClient(ctx context.Context, url, hostname string) (pb.GRPCBinClient, func() error, error) {

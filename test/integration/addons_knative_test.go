@@ -8,6 +8,7 @@ import (
 	"fmt"
 
 	"github.com/blang/semver/v4"
+
 	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 	"github.com/kong/kubernetes-testing-framework/pkg/clusters/addons/knative"
 )

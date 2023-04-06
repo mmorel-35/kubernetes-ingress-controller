@@ -11,12 +11,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kong/deck/file"
-	"github.com/kong/go-kong/kong"
-	"github.com/kong/kubernetes-testing-framework/pkg/environments"
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+
+	"github.com/kong/deck/file"
+	"github.com/kong/go-kong/kong"
+	"github.com/kong/kubernetes-testing-framework/pkg/environments"
 )
 
 func exposeKongAdminService(ctx context.Context, t *testing.T,

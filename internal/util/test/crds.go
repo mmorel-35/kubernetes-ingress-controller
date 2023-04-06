@@ -8,13 +8,13 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 	apiextclient "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset/typed/apiextensions/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/util/retry"
 
 	"github.com/kong/kubernetes-ingress-controller/v2/test/consts"
+	"github.com/kong/kubernetes-testing-framework/pkg/clusters"
 )
 
 // -----------------------------------------------------------------------------

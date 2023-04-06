@@ -54,7 +54,7 @@ linters-settings:
     sections:
     - standard
     - default
-    - prefix(github.com/kong/kubernetes-ingress-controller/v2)
+    - prefix(github.com/kong)
   importas:
     no-unaliased: true
     alias:

@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	deckutils "github.com/kong/deck/utils"
-	"github.com/kong/go-kong/kong"
 	"github.com/stretchr/testify/require"
 
+	deckutils "github.com/kong/deck/utils"
+	"github.com/kong/go-kong/kong"
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/dataplane/deckerrors"
 )
 

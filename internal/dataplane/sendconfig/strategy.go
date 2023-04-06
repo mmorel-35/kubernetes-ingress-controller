@@ -3,11 +3,11 @@ package sendconfig
 import (
 	"context"
 
+	"github.com/sirupsen/logrus"
+
 	"github.com/kong/deck/dump"
 	"github.com/kong/deck/file"
 	"github.com/kong/go-kong/kong"
-	"github.com/sirupsen/logrus"
-
 	"github.com/kong/kubernetes-ingress-controller/v2/internal/metrics"
 )
 
